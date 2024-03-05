@@ -3,7 +3,7 @@ package Model;
 import Eceptions.InvalidNumberOfBotException;
 import Eceptions.InvalidPlayerException;
 import Eceptions.InvalidSymbolException;
-import Service.WinningStrategy;
+import Service.winningStrategy.WinningStrategy;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -128,7 +128,7 @@ public class Game {
             return this;
         }
 
-       
+
         public Builder setDimension(int dimension) {
             this.dimension = dimension;
             return this;

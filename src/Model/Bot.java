@@ -1,6 +1,6 @@
 package Model;
 
-import Service.BotDifficultyLevel;
+import BotDifficultyLevel;
 
 public class Bot extends Player{
     BotDifficultyLevel botDifficultyLevel;

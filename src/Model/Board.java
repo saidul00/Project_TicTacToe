@@ -33,6 +33,7 @@ public class Board {
             }
         }
     }
+
     public void displayBoard(){
         for(int i=0;i<dimension;i++){
             List<Cell> cells = matrix.get(i);

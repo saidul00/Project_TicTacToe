@@ -1,4 +1,4 @@
-package Service;
+package Service.BotPlayingStrategy;
 
 public enum BotDifficultyLevel {
     EASY,
