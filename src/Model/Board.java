@@ -7,22 +7,6 @@ public class Board {
     private int dimension;
     private List<List<Cell>> matrix;
 
-    public int getDimension() {
-        return dimension;
-    }
-
-    public List<List<Cell>> getMatrix() {
-        return matrix;
-    }
-
-    public void setMatrix(List<List<Cell>> matrix) {
-        this.matrix = matrix;
-    }
-
-    public void setDimension(int dimension) {
-        this.dimension = dimension;
-    }
-
     public Board(int dimension) {
         this.dimension = dimension;
         matrix = new ArrayList<>();
@@ -42,5 +26,21 @@ public class Board {
             }
             System.out.println();
         }
+    }
+
+    public int getDimension() {
+        return dimension;
+    }
+
+    public void setDimension(int dimension) {
+        this.dimension = dimension;
+    }
+
+    public List<List<Cell>> getMatrix() {
+        return matrix;
+    }
+
+    public void setMatrix(List<List<Cell>> matrix) {
+        this.matrix = matrix;
     }
 }

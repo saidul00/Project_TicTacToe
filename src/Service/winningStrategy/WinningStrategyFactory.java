@@ -1,7 +1,7 @@
 package Service.winningStrategy;
 
 public class WinningStrategyFactory {
-    public WinningStrategy getWinningStrategy(WinningStrategy name, int dimension){
+    public static WinningStrategy getWinningStrategy(WinningStrategyName name, int dimension){
         return new OrderOneWinningStrategy(dimension);
     }
 }

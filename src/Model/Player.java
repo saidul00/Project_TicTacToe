@@ -18,21 +18,6 @@ public class Player {
         this.playerType = playerType;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public char getSymbol() {
-        return symbol;
-    }
-
-    public PlayerType getPlayerType() {
-        return playerType;
-    }
 
     public Move makeMove(Board board){
         Scanner sc = new Scanner(System.in);
@@ -46,5 +31,37 @@ public class Player {
         cellPlayedOn.setPlayer(this);
 
         return new Move(cellPlayedOn,this);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public char getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(char symbol) {
+        this.symbol = symbol;
+    }
+
+    public PlayerType getPlayerType() {
+        return playerType;
+    }
+
+    public void setPlayerType(PlayerType playerType) {
+        this.playerType = playerType;
     }
 }

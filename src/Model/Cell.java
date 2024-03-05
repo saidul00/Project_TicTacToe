@@ -12,6 +12,13 @@ public class Cell {
         this.cellState = CellState.EMPTY;
         this.player = null;
     }
+    public void displayCell(Cell cell){
+        if(player == null){
+            System.out.print("| |");
+        }else{
+            System.out.print("|" + player.getSymbol() + "|");
+        }
+    }
 
     public int getRow() {
         return row;
@@ -44,11 +51,5 @@ public class Cell {
     public void setPlayer(Player player) {
         this.player = player;
     }
-    public void displayCell(Cell cell){
-        if(cell.cellState == CellState.FILLED){
-            System.out.print("|" + cell.player.getSymbol() + "|");
-        }else{
-            System.out.print("| |");
-        }
-    }
+
 }

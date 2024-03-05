@@ -3,5 +3,11 @@ package Model;
 public enum GameStatus {
     IN_PROGRESS,
     DRAW,
-    WINNER
+    WINNER;
+
+    public enum BotDifficultyLevel {
+        EASY,
+        MEDIUM,
+        HARD
+    }
 }
